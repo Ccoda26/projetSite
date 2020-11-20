@@ -2,6 +2,7 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: black;
+    background: radial-gradient(circle farthest-side,darkblue, black);
     padding: 10px;
 }
 
@@ -15,10 +16,9 @@ header li {
   list-style-type: none;
     font-size: 20px;
     margin: 0 50px;
-    color: white;
 }
 header a{
-    color: blueviolet;
+    color: aqua;
     text-decoration: none;
     font-size: 25px;
 }
@@ -27,10 +27,15 @@ header a:hover{
 }
 .rond{
     width: 100px;
-    height: 100px;
+    padding: 20px;
     border: black 1px solid;
     border-radius: 50%;
     background-color: fuchsia;
+}
+
+.rond:hover{
+    color: white;
+    background-color: palevioletred;
 }
 
 .accueil{
@@ -44,6 +49,9 @@ header a:hover{
     text-align: center;
 }
 
+.accueil h2:hover{
+    text-decoration: underline;
+}
 .accueil a{
     color: black;
     text-decoration: none;
@@ -61,18 +69,30 @@ footer{
     display: flex;
     justify-content: center;
     background-color: black;
+    background: radial-gradient(circle farthest-side,darkblue, black);
     padding: 30px;
+    margin: 0;
 }
 
 
 /*page allartiles*/
 .report{
-width: 80%;
+    width: 80%;
+    margin: auto;
 }
 
 .article{
     width: 30%;
-    margin: 20px;
+    margin: 30px 20px;
+    text-align: center;
+}
+
+.article a{
+    text-decoration: none;
+}
+
+.article a:hover{
+    text-decoration: underline;
 }
 
 .affichage{
@@ -90,11 +110,11 @@ width: 80%;
 }
 
 .larticle{
-    width: 80%;
+    width: 1000px;
     margin: auto;
-    text-align: center;
     padding: 50px 0;
 }
 .larticle > h1{
     font-size: 50px;
+    text-align: center;
 }
