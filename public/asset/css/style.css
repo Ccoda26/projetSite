@@ -17,13 +17,36 @@ header li {
     margin: 0 50px;
     color: white;
 }
-
+header a{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 25px;
+}
+header a:hover{
+    color: white;
+}
 .rond{
     width: 100px;
     height: 100px;
     border: black 1px solid;
     border-radius: 50%;
     background-color: fuchsia;
+}
+
+.accueil{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.accueil h2{
+    width: 30%;
+    text-align: center;
+}
+
+.accueil a{
+    color: black;
+    text-decoration: none;
 }
 
 .picture{
@@ -56,4 +79,22 @@ width: 80%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+
+/*theartcles*/
+
+.image{
+
+    margin-bottom: 50px;
+}
+
+.larticle{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.larticle > h1{
+    font-size: 50px;
 }
