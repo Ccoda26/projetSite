@@ -51,7 +51,7 @@ class PageController extends AbstractController
         $articles = $this->articles;
         $articlestris = array_reverse(array_slice($articles, 0,3 ));
 
-        return $this->render('base.html.twig', [
+        return $this->render('Base.html.twig', [
             'articles' => $articlestris
         ]);
     }
