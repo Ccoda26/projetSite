@@ -6,9 +6,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class pageController extends AbstractController
+class PageController extends AbstractController
 {
-    public const ARTICLE = [
+    private $articles = [
           1=>  [
                 "id" => 1,
                 "title" => "Le gouvernement a trois mois pour prouver qu’il respecte ses engagements climatiques, une première en France",
@@ -48,7 +48,7 @@ class pageController extends AbstractController
 
     public function HomePage(){
 
-        $articles = pageController::ARTICLE;
+        $articles = $this->articles;
         $articlestris = array_reverse(array_slice($articles, 0,3 ));
 
         return $this->render('base.html.twig', [
@@ -61,7 +61,7 @@ class pageController extends AbstractController
     */
     public function AllArticles(){
 
-        $articles = pageController::ARTICLE;
+        $articles =  $this->articles;
 
         return $this->render('AllArticles.html.twig',[
             'articles' => $articles
@@ -72,7 +72,7 @@ class pageController extends AbstractController
      * @Route("/articles/{id}", name="The_Article")
      */
     public function TheArticle($id){
-        $articles = pageController::ARTICLE;
+        $articles = $this->articles;
 
         $articlefin = $articles[$id];
 
