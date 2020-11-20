@@ -81,5 +81,17 @@ class PageController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/resume", name="Resume")
+     */
+    public function Resume(){
+        $articles = $this->articles;
+
+
+        return $this->render('Resume.html.twig',[
+            'articles' => $articles
+        ]);
+    }
+
 
 }

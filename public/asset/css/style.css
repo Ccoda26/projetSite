@@ -1,3 +1,4 @@
+/* HomePage */
 header{
     display: flex;
     justify-content: space-around;
@@ -105,7 +106,6 @@ footer{
 /*theartcles*/
 
 .image{
-
     margin-bottom: 50px;
 }
 
@@ -115,6 +115,28 @@ footer{
     padding: 50px 0;
 }
 .larticle > h1{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+}
+
+/*Resume*/
+
+.resume{
+    display: flex;
+    margin: 50px 20px;
+}
+
+.resume a{
+    text-decoration: none;
+    color: black;
+}
+
+.resume a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.pics{
+    width: 20%;
+    margin-right: 20px;
 }

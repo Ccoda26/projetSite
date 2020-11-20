@@ -1,0 +1,18 @@
+{% extends 'Base.html.twig' %}
+{% block content %}
+
+<h1>Les articles disponibles : </h1>
+
+        {% for article in articles %}
+            <section class="resume">
+                <div class="pics">
+                    <img src="{{ article.image }}" class="resp">
+                </div>
+                <span>
+                <h2><a href="{{ path('The_Article', { 'id': article.id}) }}">{{ article.title }}</a></h2>
+                <p>{{ article.content }}</p>
+                </span>
+            </section>
+        {% endfor %}
+
+{% endblock content %}

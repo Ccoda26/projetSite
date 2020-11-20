@@ -14,7 +14,7 @@
             <ul>
                 <li> <a href="{{ path('HomePage') }}">Acceuil</a></li>
                 <li><a href="{{ path('All_Articles') }}">Articles</a></li>
-                <li><a href="">Items 3</a></li>
+                <li><a href="{{ path('Resume') }}">Resumé</a></li>
                 <li><a href="">Items 4</a></li>
             </ul>
         </header>
@@ -22,7 +22,6 @@
             {% block content %}
                 <article class="accueil">
                 {% for article in articles %}
-
                        <h2><a href="{{ path('The_Article', { 'id': article.id}) }}">{{ article.title }}</a></h2>
                 {% endfor %}
                 </article>
