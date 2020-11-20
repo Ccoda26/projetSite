@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /* HomePage */
 header{
     display: flex;
@@ -14,7 +18,7 @@ header >ul{
 }
 
 header li {
-  list-style-type: none;
+    list-style-type: none;
     font-size: 20px;
     margin: 0 50px;
 }
@@ -22,11 +26,15 @@ header a{
     color: aqua;
     text-decoration: none;
     font-size: 25px;
+
 }
 header a:hover{
     color: white;
+
 }
+
 .rond{
+    box-sizing: initial;
     width: 100px;
     padding: 20px;
     border: black 1px solid;
@@ -46,7 +54,7 @@ header a:hover{
 }
 
 .accueil h2{
-    width: 30%;
+    width: 33%;
     text-align: center;
 }
 
@@ -78,13 +86,13 @@ footer{
 
 /*page allartiles*/
 .report{
-    width: 80%;
     margin: auto;
+
 }
 
 .article{
     width: 30%;
-    margin: 30px 20px;
+    margin: 20px 10px;
     text-align: center;
 }
 
@@ -98,8 +106,8 @@ footer{
 
 .affichage{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
 
