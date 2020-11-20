@@ -1,0 +1,20 @@
+
+{% extends 'base.html.twig' %}
+{% block content %}
+
+        <ul class="affichage">
+            {% for article in articles %}
+                <article class="article">
+                  <label for="clic">  <div class="report">
+                      <img src="{{ article.image }}" class="resp">
+                    </div></label>
+                    <a href="{{ path('The_Article', { 'id':article.id}) }}" id="clic">{{ article.title }}</a>
+                </article>
+
+            {% endfor %}
+
+        </ul>
+
+{% endblock content %}
+
+
